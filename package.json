@@ -2,7 +2,7 @@
   "type": "commonjs",
   "types": "./dist/index.d.ts",
   "name": "boardmaker-lib",
-  "version": "1.0.1-minified",
+  "version": "1.0.1-readme",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -39,5 +39,20 @@
     "ts-morph": "^21.0.1",
     "undici-types": "^6.11.1"
   },
-  "description": ""
+  "description": "Create HTML checkerboard-like Board Games",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekomancer0/boardmaker-lib.git"
+  },
+  "keywords": [
+    "board",
+    "chess",
+    "chessboard",
+    "maker",
+    "grid"
+  ],
+  "bugs": {
+    "url": "https://github.com/nekomancer0/boardmaker-lib/issues"
+  },
+  "homepage": "https://github.com/nekomancer0/boardmaker-lib#readme"
 }
