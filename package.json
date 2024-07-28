@@ -2,7 +2,7 @@
   "type": "commonjs",
   "types": "./dist/index.d.ts",
   "name": "boardmaker-lib",
-  "version": "1.0.1-jsdoc",
+  "version": "1.0.1-minified",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
