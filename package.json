@@ -2,7 +2,7 @@
   "type": "commonjs",
   "types": "./dist/index.d.ts",
   "name": "boardmaker-lib",
-  "version": "1.0.1-readme",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
   "author": "Nekomancer",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.0.2",
     "ts-to-jsdoc": "^2.1.0"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "brace-expansion": "^2.0.1",
     "braces": "^3.0.3",
     "code-block-writer": "^12.0.0",
+    "express": "^4.19.2",
     "fast-glob": "^3.3.2",
     "fastq": "^1.17.1",
     "fill-range": "^7.1.1",
