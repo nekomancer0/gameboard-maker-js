@@ -66,7 +66,7 @@ board.init(context) // HTMLDivElement
 }
 ```
 
-_or, add it in your <head> (soon)_
+_or, add it in your <head>_
 
 ```html
 <style
