@@ -3,3 +3,4 @@ node_modules/
 **/*.ts
 tsconfig.json
 package-lock.json
+build.js
