@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/index.css"],
-  "sourcesContent": [".context {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n}\r\n\r\n.context .col {\r\n  display: flex;\r\n  flex-direction: column-reverse;\r\n  justify-content: center;\r\n}\r\n\r\n.context .col .item {\r\n  border: 1px solid black;\r\n  width: 27px;\r\n  height: 27px;\r\n  text-align: center;\r\n}\r\n"],
-  "mappings": ";AAAA,CAAC;AACC,WAAS;AACT,kBAAgB;AAChB,mBAAiB;AACnB;AAEA,CANC,QAMQ,CAAC;AACR,WAAS;AACT,kBAAgB;AAChB,mBAAiB;AACnB;AAEA,CAZC,QAYQ,CANC,IAMI,CAAC;AACb,UAAQ,IAAI,MAAM;AAClB,SAAO;AACP,UAAQ;AACR,cAAY;AACd;",
-  "names": []
-}
