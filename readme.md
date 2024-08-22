@@ -15,32 +15,18 @@ https://cdn.jsdelivr.net/npm/boardmaker-lib@latest/dist/index.min.js
 ## Example
 
 ```js
-
 let board = new BoardMaker({
-    width: 20 // 20 boxes as width
-    height: 35 // 35 boxes as height
-    boxNames: ["wall", "empty"]
-})
-
-// Add data
-
-board.addData({
-    position: {
-        x: // ...
-        y: // ...
-    },
-    name: "..."
+  width: 20, // 20 boxes as width
+  height: 35, // 35 boxes as height
 });
 
-board.removeData({
-    x: // ...
-    y: // ...
-});
+let item = board.getElement({ x: 1, y: 1 }); // <div class="item item-1"></div>
 
-// Metadatas are used to put style to the boxes and be recognisable.
+item.style.backgroundColor = "black";
 
-// Populate your div element
-board.init(context) // HTMLDivElement
+let position = board.getPosition(item);
+
+console.log(position.x, position.y); // {x: 1, y: 1}
 ```
 
 ## Don't forget to add style
