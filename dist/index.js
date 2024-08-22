@@ -19,36 +19,6 @@ class BoardMaker extends EventTarget {
         this.options = options;
     }
     /**
-       * @deprecated use getElement and getPosition to set custom classes instad.
-       * @param {Metadata} metadata
-       * @returns {void}
-       */
-    addData(metadata) {
-        this.metadatas.push(metadata);
-    }
-    /**
-       * @deprecated use getElement and getPosition to set custom classes instad.
-       * @param {Position} position
-       * @returns {void}
-       */
-    removeData(position) {
-        this.metadatas = this.metadatas.filter((m) => m.position.x !== position.x && m.position.y !== position.y);
-        this.metadatas = this.metadatas.filter((m) => m.position.y !== null);
-    }
-    /**
-       * @deprecated use getElement and getPosition to set custom classes instad.
-       * @param {Position} position
-       * @returns {Metadata | null}
-       */
-    getData(position) {
-        for (let metadata of this.metadatas) {
-            if (metadata.position.x === position.x &&
-                metadata.position.y === position.y)
-                return metadata;
-        }
-        return null;
-    }
-    /**
      * @description Initialize and populate the grid, don't forget to add style.
        * @param {HTMLDivElement} [context]
        * @returns {void}
@@ -120,23 +90,12 @@ class BoardMaker extends EventTarget {
         });
     }
     /**
-     * @description Overwrite and load a new JSON Board Data
-       * @param {Metadata[]} metadatas
-       * @returns {void}
-       */
-    //@ts-ignore
-    loadJSON(metadatas) {
-        this.metadatas = [];
-        for (let metadata of metadatas) {
-            this.addData(metadata);
-        }
-    }
-    /**
      * @description Get a box with its position, possibly to edit it, add style or get its class list.
      * @description Only call at after .init();
        * @param {Position} position
        * @returns {HTMLDivElement | null}
        */
+    //@ts-ignore
     getElement(position) {
         let context = this.context;
         let col = context.querySelector(`.col-${position.x}`);
@@ -149,8 +108,10 @@ class BoardMaker extends EventTarget {
        */
     getPosition(item) {
         let parent = item.parentElement;
-        let x = parseInt(parent.className.split(" ").at(1).split("-")[1]);
-        let y = parseInt(item.className.split(" ").at(1).split("-")[1]);
+        let yClasses = item.className.split(" ");
+        let xClasses = parent.className.split(" ");
+        let y = parseInt(yClasses[1].split("-")[1]);
+        let x = parseInt(xClasses[1].split("-")[1]);
         return { x, y };
     }
 }
