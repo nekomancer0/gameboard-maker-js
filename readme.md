@@ -63,4 +63,5 @@ _or, add it in your <head>_
 
 ## Example Tool
 
-![alt text](https://i.imgur.com/tvUeNUU.png)
+![alt text](https://i.imgur.com/XEDac9U.png)
+[https://nekomancer0.github.io/GameBoard-Maker/](https://nekomancer0.github.io/GameBoard-Maker/)
