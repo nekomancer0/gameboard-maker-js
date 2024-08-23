@@ -109,7 +109,7 @@ const elements = board.getElements();
 console.log(elements);
 ```
 
-### `elements.size(num: number): void`
+### `elements().size(num: number): void`
 
 Sets the border size for all elements in the grid.
 
@@ -119,7 +119,7 @@ Sets the border size for all elements in the grid.
   ####Example
 
 ```javascript
-board.elements.size(2);
+board.elements().size(2);
 ```
 
 ### `getPosition(item: HTMLDivElement): Position`
@@ -168,19 +168,19 @@ Hides all borders of the grid elements.
 #### Example
 ```javascript
 
-board.borders.hide();
+board.borders().hide();
 ```
 
-### `borders.show(): void`
+### `borders().show(): void`
 
 Shows all borders of the grid elements.
 
 #### Example
 ```javascript
-board.borders.show();
+board.borders().show();
 ```
 
-### `borders.colorize(color: string): void`
+### `borders().colorize(color: string): void`
 Sets the border color for all elements in the grid.
 
 **Parameters**
@@ -189,7 +189,7 @@ Sets the border color for all elements in the grid.
 #### Example
 ```javascript
 
-board.borders.colorize('red');
+board.borders().colorize('red');
 ```
 
 ## Example Usage
@@ -201,6 +201,7 @@ const board = new BoardMaker(container, options);
 
 board.init();
 board.on('init', (context) => console.log('Grid initialized!', context));
+board.emit('init', container);
 const elements = board.getElements();
 console.log(elements);
 ```

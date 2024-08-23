@@ -78,7 +78,7 @@ function BoardMaker(context, options) {
             }
             return elements;
         }
-        _elements() {
+        elements() {
             let elements = this.getElements();
             return {
                 /**
@@ -93,7 +93,6 @@ function BoardMaker(context, options) {
                 },
             };
         }
-        elements = this._elements();
         /**
          *
          * @param {HTMLDivElement} item
@@ -127,7 +126,7 @@ function BoardMaker(context, options) {
                 item,
             };
         }
-        _borders() {
+        borders() {
             let elements = this.getElements();
             return {
                 hide: () => {
@@ -148,6 +147,5 @@ function BoardMaker(context, options) {
                 },
             };
         }
-        borders = this._borders();
     })(context, options);
 }
