@@ -1,0 +1,19 @@
+.context {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.context .col {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.context .col .item {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+}
