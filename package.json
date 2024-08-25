@@ -1,11 +1,10 @@
 {
   "name": "boardmaker-lib",
-  "version": "1.0.6-fix-2",
+  "version": "1.0.6-fix-6",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jsdoc": "ts-to-jsdoc -p ./tsconfig.json -f src/index.ts",
-    "build": "npm run jsdoc && vite build"
+    "jsdoc": "ts-to-jsdoc -p ./tsconfig.json -f ./index.ts"
   },
   "author": "Nekomancer",
   "license": "ISC",
